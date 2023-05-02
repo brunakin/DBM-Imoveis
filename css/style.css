@@ -1,0 +1,617 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700;800;900&family=Poppins:wght@200;300;400;500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    transition: .2s all;
+    box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: 15px;
+}
+html::-webkit-scrollbar-button{
+    background: #c6c6cc;
+}
+html::-webkit-scrollbar-button:hover{
+    background: #858588;
+}
+
+html::-webkit-scrollbar-track{
+    background: #c5c3c3;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: linear-gradient(0deg, rgba(171,33,33,1) 0%, rgba(124,121,121,1) 65%);
+    border-radius: 15px;
+    padding: 1px;
+}
+
+
+body{
+    background-color: #e0dddd;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+#logo{
+    display: flex;
+    justify-content: left;
+}
+
+#logo img{
+    min-width: 110px;
+    min-height: 110px;
+    max-width: 130px;
+    max-height: 130px;
+}  
+  
+#logoImg{
+    margin-right: 10px;
+    pointer-events: none;
+    user-select: none;
+}
+ 
+.menu{
+    display: flex;
+    padding: 5px;
+    background-color: #D9D9D9;
+    font-size: 20px;
+    box-shadow: 0 1px 3px rgb(0,0,0, 0.3);
+}
+
+.menu a{
+    padding: 14px;
+    padding-top: 40px;
+    padding-left: 30px;
+    text-decoration: none;
+    color: #710f11;
+    transition: .4s all;
+}
+  
+.menu a:hover{
+    background-color: transparent;
+    color: #da1619;
+    letter-spacing: 1.2px;
+}
+.menu .active{
+    background-color: transparent;
+    color: #da1619;
+    letter-spacing: 1.2px;
+}
+
+@media screen and (max-width: 800px){
+    header h1{
+       font-size: 3rem;
+    }
+    #logoImg{
+       width: 70px;
+    }
+    #logo{
+        justify-content: center;
+    }
+    .menu{
+        font-size: 17px;
+        justify-content: center;
+    }
+}
+  
+@media screen and (max-width: 450px){
+    .menu, .menu a{
+       display: block;
+       width: 100%;
+       text-align: center;
+       padding: 10px;
+    }
+}
+
+/*HOME*/
+
+/*banner*/
+#banner{
+    width: 100%;
+    max-height: 700px;
+    min-height: 600px;
+    background-image: url('../images/Conheca.gif');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#banner h1{
+    color: transparent;
+}
+
+
+@media(max-width: 800px){
+    #banner{
+        min-height: 300px;
+    }
+}
+@media(max-width: 425px){
+    #banner{
+        min-height: 490px;
+    }
+}
+@media(max-width: 280px){
+    #banner{
+        min-height: 85px;
+    }
+}
+
+/*Imóveis*/
+#imoveis{
+    color: transparent;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 150px;
+    overflow: none;
+    border-radius: 10px;
+}
+
+.flex-item img{
+    max-width: 300px;
+    max-height: 220px;
+    border-radius: 10px;
+    flex: 50%;
+    box-shadow: 3px 4px 5px 5px rgb(113, 15, 17, 0.8);
+
+    max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.flex-item {
+    flex: 50%;
+    border-radius: 10px;
+}
+
+.flex-item img:hover{
+    transform: scale(1.1);
+}
+  
+@media (max-width: 1000px) {
+    .flex-container {
+      flex-direction: column;
+      width: 100%;
+    }
+    .flex-item img{
+        flex-direction: column;
+        width: 70%;
+        margin-bottom: 25px;
+    }
+}
+
+
+
+
+/*Sobre Nós*/
+.sobre-nos{
+    width: 100%;
+    padding: 50px;
+    margin-top: -70px;
+}
+
+.titulo{
+    padding-bottom: 50px;
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo h1{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #710f11;
+    font-size: 4rem;
+}
+
+.sobre-nos .sobre{
+    justify-content: center;  
+    display: flex;
+}
+
+.sobre-nos .sobre img{
+    max-width: 400px;
+    min-width: 170px;
+    max-height: 400px;
+    display: flex;
+}
+.sobre-nos .sobre p{
+    max-width: 600px;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px dashed #606061;
+    color: #606061;
+    border-radius: 10px;
+    box-shadow: 4px 5px 5px 4px rgb(0,0,0,0.3);
+    font-weight: 300 !important;
+    font-size: 23px;
+    padding: 20px;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(184,184,184,1) 65%);
+}
+@media(max-width: 1000px){
+    .sobre-nos .sobre{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+    .sobre-nos img{
+        width: 100%;
+    }
+}
+@media(max-width: 400px){
+    .sobre-nos .sobre p{
+        font-size: 17px;
+    }
+    .titulo h1{
+        font-size: 3rem;
+    }
+}
+
+
+/*CONTATO*/
+.contato{
+    width: 100%;
+    padding: 50px;
+    margin-top: -70px;
+}
+.contato .contatos{
+    justify-content: center;  
+    display: flex;
+}
+.contato .contatos img{
+    max-width: 493px;
+    min-width: 170px;
+    max-height: 262px;
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid #710f11;
+    box-shadow: 4px 5px 5px 4px rgb(0,0,0,0.3);
+}
+.contato .contatos p{
+    min-width: 170px;
+    max-width: 490px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px dashed #710f11;
+    color: #710f11;
+    border-radius: 10px;
+    box-shadow: 4px 5px 5px 4px rgb(0,0,0,0.3);
+    font-weight: 300 !important;
+    font-size: 23px;
+    padding: 15px;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(184,184,184,1) 65%);
+}
+.contato .telefone img{
+    position: absolute;
+    margin: 0 0 40px 90px;
+}
+.contato .telefone a{
+    color: #606061;
+    font-weight: 400;
+}
+.contato .telefone a:hover{
+    color: #710f11;
+    text-decoration: none;
+}
+
+@media(max-width: 1000px){
+    .contato .contatos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+    .contato img{
+        width: 110%;
+    }
+    .contato .contatos p{
+        font-size: 19px;
+        
+    }
+}
+@media(max-width: 400px){
+    .contato .contatos p{
+        font-size: 17px;
+        width: 100%;
+    }
+    .contatos span{
+        width: 100px !important;
+    }
+    .contato img{
+        width: 100%;
+    }
+    .contato .telefone a{
+        font-size: 13.5px;
+        word-break: break-word;
+    }
+}
+
+/*RODAPÉ*/
+.footer{
+    width: 100%;
+    min-height: 150px;
+    max-height: 250px;
+    margin-top: -150px;
+    background-color: #c5c3c3;
+    border-top: 2px solid #606061;
+    padding-top: 30px;
+}
+
+.footer .logo-rodape{
+    display: flex;
+    justify-content: start;
+    margin: 50px 0 0 60px;
+}
+.footer img{
+    width: 120px;
+    height: 120px;
+    display: flex;
+}
+.footer .redes-sociais{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer .redes-sociais a{
+    height: 5rem;
+    width: 5rem;
+    font-size: 2rem;
+    color: #606061;
+    margin: .3rem;
+    text-decoration: none;
+}
+
+.footer .redes-sociais .face:hover{
+    color: rgb(66, 103, 178);
+}
+.footer .redes-sociais .insta:hover{
+    color: rgb(205, 72, 107);
+}
+.footer .redes-sociais .whats:hover{
+    color: rgb(70, 197, 102);
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -30px;
+}
+
+.footer .links a{
+    padding: .6rem 1rem;
+    color: #710f11;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.footer .links a:hover{
+    color: #da1619;
+    border-color: #da1619;
+}
+
+.footer .nota{
+    font-size: 1.4rem;
+    color: var(--white);
+    font-weight: lighter;
+    padding: 1rem;
+}
+
+.footer .creditos{
+    font-size: 1rem;
+    color: #FFFFFF;
+    font-weight: lighter;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.342);
+    text-align: center;
+}
+
+
+
+/*PÁGINA IMÓVEIS*/
+ .img-oficial{    
+    position: relative;
+    top: 30px;
+    left: 0;
+    border-radius: 10px;
+}
+
+.propaganda {    
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#imovel img{
+    border-radius: 10px;
+}
+
+#imovel .propaganda a{
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#imovel .propaganda a i:hover{
+    color: #710f11;
+}
+#imovel .propaganda .img-oficial i{
+    font-size: 3rem;
+    color: #FFFFFF;
+    overflow: auto;
+}
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+}
+   
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.conteudo-modal {
+    border-radius: 10px;
+    position: relative;
+    width: 500px;
+    max-width: 90%;
+    background: rgb(217, 217, 217, 0.9);
+    padding: 1em 2em;
+    text-align: center;
+    border: 2px solid #710f11;
+}
+.conteudo-modal h1{
+    color: #710f11;
+    font-weight: 300;
+}
+   
+#imovel .modal-final {
+    text-align: center;
+    margin-top: 10px;
+    float: right;
+}
+#imovel .modal-final .botao-ok{
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid #710f11;
+    color: #710f11;
+    font-weight: 400;
+    text-align: center;
+}
+#imovel .modal-final .botao-ok:hover{
+    background-color: #710f11;
+    color: #FFFFFF;
+}
+
+@media(max-width: 800px){
+    .conteudo-modal{
+        max-width: 80%;
+        font-size: 12px;
+    }
+    #imovel .modal-final .botao-ok{
+        border: none;
+        font-size: 11px;
+        position: absolute;
+    }
+    #imovel .modal-final .botao-ok:hover{
+        background-color: transparent;
+        color: #606061;
+    }
+}
+/*CÔMODOS DOS IMÓVEIS*/
+.fotos-apto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fotos-apto .row{
+    max-width: 1000px;
+    padding: 45px;
+    margin-bottom: 20px;
+}
+.fotos-apto .row img{
+    width: 35%;
+}
+
+
+.descricao{
+    margin-top: -150px;
+}
+.titulo-descricao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #606061;
+    margin-bottom: 7px;
+}
+.titulo-descricao i{
+    font-size: 23px;
+    padding: 0 5px 0 5px;
+}
+.descricao-comodo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.descricao-comodo p{
+    font-size: 20px;
+    width: 50%;
+    text-align: justify;
+    margin-bottom: inherit;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px dashed #606061;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(184,184,184,1) 65%);
+    color: #606061;
+}
+
+@media(max-width: 800px){
+    #imovel img{
+        width: 100%;
+    }
+    #imovel .propaganda .img-oficial i{
+        font-size: 2rem;
+    }
+
+    .titulo-descricao h2{
+        font-size: 18px;
+    }
+    .descricao-comodo p{
+        width: 90%;
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+@media(max-width: 450px){
+    #imovel .flex-container{
+        display: contents;
+    }
+
+    .descricao{
+        margin-top: -45px;
+    }
+    .titulo-descricao h2{
+        font-size: 15px;
+        word-break: break-word;
+        text-align: center;
+    }
+    .titulo-descricao i{
+        display: none;
+    }
+    .descricao-comodo p{
+        width: 90%;
+        padding: 10px;
+        font-size: 15px;
+        word-break: break-word;
+        text-align: justify;
+        margin-left: 5%;
+    }
+}
+
