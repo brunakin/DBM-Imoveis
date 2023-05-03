@@ -600,6 +600,7 @@ body{
         font-size: 15px;
         word-break: break-word;
         text-align: center;
+	padding: 5px;
     }
     .titulo-descricao i{
         display: none;
