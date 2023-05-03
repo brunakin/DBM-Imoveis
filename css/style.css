@@ -124,12 +124,12 @@ body{
 }
 
 
-/*@media(max-width: 800px){
+@media(max-width: 800px){
     #banner{
-        min-height: 300px;
+        background-size: 100% 60%;
     }
 }
-@media(max-width: 425px){
+/*@media(max-width: 425px){
     #banner{
         min-height: 490px;
     }
